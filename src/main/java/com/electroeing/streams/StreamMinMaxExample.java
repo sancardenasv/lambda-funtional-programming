@@ -18,7 +18,6 @@ public class StreamMinMaxExample {
         getTallestPerson().ifPresent(p -> log.info("Tallest Person Found: {}", p));
         getShortestPerson().ifPresent(p -> log.info("Shortest Person Found: {}", p));
         log.info("Tallest person list: {}", StreamMinMaxExample::getTallestPersonList);
-
     }
 
     private static Optional<Person> getTallestPerson() {
